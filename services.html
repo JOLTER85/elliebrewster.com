@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ellie Brewster — Blog & Services</title>
+  <meta name="description" content="Ellie Brewster SEO blog and detailed services: niche analysis, technical SEO, content strategy, backlink building." />
+  <link rel="canonical" href="https://elliebrewster.com/" />
+  <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto; margin:0; background:#f9fafb; color:#111827; line-height:1.6}
+    header,footer{background:#111827;color:#f9fafb;padding:1rem;text-align:center}
+    nav a{margin:0 .5rem;color:#f9fafb;text-decoration:none;font-weight:600}
+    nav a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:auto;padding:1.5rem}
+    h1,h2{color:#111827}
+    .grid{display:grid;gap:1rem}
+    .services,.posts{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:white;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+    .card h3{margin-top:0}
+    .muted{color:#6b7280}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ellie Brewster</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Services Page Example -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid services">
+        <article class="card">
+          <h3>Niche Analysis</h3>
+          <p class="muted">Researching profitable niches, competitor analysis, and demand mapping to ensure the right positioning before building.</p>
+        </article>
+        <article class="card">
+          <h3>Technical SEO</h3>
+          <p class="muted">Site speed optimization, Core Web Vitals, schema markup, and clean architecture that Google can crawl efficiently.</p>
+        </article>
+        <article class="card">
+          <h3>Content Strategy</h3>
+          <p class="muted">Creating E‑E‑A‑T aligned editorial playbooks, topical maps, and intent‑driven articles that rank and convert.</p>
+        </article>
+        <article class="card">
+          <h3>Backlink Building</h3>
+          <p class="muted">Natural acquisition through PR, partnerships, and data‑driven campaigns for long‑term authority.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blog Page Example -->
+    <section id="blog" style="margin-top:3rem">
+      <h2>Latest Blog Posts</h2>
+      <div class="grid posts">
+        <article class="card">
+          <h3><a href="/blog/seo-strategy-2025">SEO Strategy 2025</a></h3>
+          <p class="muted">Explore the latest trends in E‑E‑A‑T, search intent, and technical SEO for the coming year.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/blog/technical-seo-guide">Technical SEO Guide</a></h3>
+          <p class="muted">A hands‑on guide to optimizing Core Web Vitals, crawl budget, and scalable site architectures.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/blog/content-systems">Building Content Systems</a></h3>
+          <p class="muted">How to set up workflows for briefs, author pages, and topical maps that compound results.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Ellie Brewster — All rights reserved.</small>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
