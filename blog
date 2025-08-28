@@ -1,1 +1,59 @@
-seo-strategies-2025.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical SEO Guide 2025 – Improve Speed, Structure & Core Web Vitals</title>
+  <meta name="description" content="A complete technical SEO guide for 2025: Core Web Vitals, schema markup, site speed optimization, mobile-first indexing, and crawl budget management.">
+  <link rel="canonical" href="https://elliebrewster.com/blog/technical-seo-2025">
+</head>
+<body>
+  <header>
+    <h1>Technical SEO Guide 2025 – Improve Speed, Structure & Core Web Vitals</h1>
+    <p><em>Published: August 29, 2025 | Author: Ellie Brewster</em></p>
+  </header>
+
+  <article>
+    <h2>1. Core Web Vitals</h2>
+    <p>
+      Google’s Core Web Vitals remain a top ranking factor in 2025. Focus on <strong>LCP, CLS, and INP</strong>
+      to ensure fast loading, visual stability, and quick interactivity. Tools like PageSpeed Insights and Lighthouse
+      are essential for monitoring.
+    </p>
+
+    <h2>2. Mobile-First Indexing</h2>
+    <p>
+      With mobile-first indexing fully rolled out, your site must deliver the same structured data,
+      meta tags, and high-quality content on both desktop and mobile versions.
+    </p>
+
+    <h2>3. Site Architecture & Crawl Budget</h2>
+    <p>
+      A clean URL structure and logical hierarchy help Google crawl and index efficiently.
+      Avoid deep nesting and keep important pages within three clicks from the homepage.
+    </p>
+
+    <h2>4. Schema Markup</h2>
+    <p>
+      Implement <strong>structured data</strong> for articles, products, and services.
+      Schema increases your chance of rich snippets and higher CTR in SERPs.
+    </p>
+
+    <h2>5. Indexing & Robots.txt</h2>
+    <p>
+      Use robots.txt and noindex tags wisely. Ensure only valuable pages are indexed,
+      and block duplicate or thin content.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      Technical SEO in 2025 is about providing <strong>speed, accessibility, and structured clarity</strong>.
+      Sites that nail these fundamentals will secure better rankings and user trust.
+    </p>
+  </article>
+
+  <footer>
+    <p>© 2025 Ellie Brewster – All rights reserved.</p>
+  </footer>
+</body>
+</html>
