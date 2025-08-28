@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ellie Brewster — SEO Expert</title>
-  <meta name="description" content="SEO strategies, technical SEO, backlink building, and content marketing by Ellie Brewster." />
-  <link rel="canonical" href="https://elliebrewster.com/" />
-  <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ellie Brewster — SEO Expert & Growth Strategist</title>
+  <meta name="description" content="Rank higher with Ellie Brewster: niche research, technical SEO, E-E-A-T content strategy, and clean backlink growth that compounds."/>
+  <link rel="canonical" href="https://elliebrewster.com/"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Ellie Brewster — SEO Expert & Growth Strategist"/>
+  <meta property="og:description" content="Niche research, technical SEO, E-E-A-T content systems, and clean backlink growth."/>
+  <meta property="og:url" content="https://elliebrewster.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <!-- Favicon (غيّر المسار إن لزم) -->
+  <link rel="icon" href="/assets/favicon.png" type="image/png"/>
 
   <!-- Google Tag Manager -->
   <script>
@@ -18,78 +27,250 @@
   </script>
   <!-- End Google Tag Manager -->
 
+  <!-- Minimal, fast, accessible styles -->
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto; margin:0; background:#f9fafb; color:#111827; line-height:1.6}
-    header,footer{background:#111827;color:#f9fafb;padding:1rem;text-align:center}
-    nav a{margin:0 .5rem;color:#f9fafb;text-decoration:none;font-weight:600}
-    nav a:hover{text-decoration:underline}
-    .container{max-width:1000px;margin:auto;padding:1.5rem}
-    h1,h2{color:#111827}
+    :root{
+      --bg:#0B1020; --fg:#0f172a; --card:#ffffff; --muted:#64748b; --accent:#5b9dff; --accent-2:#22c55e;
+      --ring:0 0 0 3px rgba(91,157,255,.25)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f8fafc;color:var(--fg);line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:auto;padding:1.25rem}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e5e7eb;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.5rem 0}
+    .brand{display:flex;align-items:center;gap:.5rem;font-weight:800}
+    .nav a{color:var(--fg);font-weight:600;margin-left:.75rem}
+    .btn{display:inline-block;background:var(--fg);color:#fff;padding:.75rem 1rem;border-radius:12px;border:1px solid #0003;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+    .btn:hover{filter:brightness(.95)}
+    .btn.outline{background:#fff;color:var(--fg);border:1px solid #e5e7eb}
+    .hero{background:linear-gradient(180deg,#f0f4ff,transparent 60%);padding:3rem 0}
+    .hero h1{font-size:clamp(1.6rem,4vw,2.8rem);line-height:1.15;margin:.25rem 0}
+    .hero p{color:var(--muted);max-width:60ch}
+    .hero-cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
     .grid{display:grid;gap:1rem}
-    .services,.posts{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .card{background:white;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}
-    .card h3{margin-top:0}
-    .muted{color:#6b7280}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:1rem}
+    .card h3{margin:.25rem 0 .5rem}
+    .muted{color:var(--muted)}
+    .section{padding:2rem 0}
+    .kpis{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .kpi{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:.75rem 1rem;min-width:160px}
+    .badge{display:inline-block;font-size:.75rem;background:#eef2ff;border:1px solid #e5e7eb;padding:.25rem .5rem;border-radius:999px;margin-bottom:.5rem}
+    .list{list-style:none;padding:0;margin:0}
+    .list li{padding-left:1.25rem;position:relative;margin:.35rem 0}
+    .list li::before{content:"•";position:absolute;left:.25rem;color:var(--accent)}
+    footer{background:#0f172a;color:#cbd5e1;padding:2rem 0;margin-top:2rem}
+    footer a{color:#cbd5e1}
+    .cta-panel{background:#0f172a;color:#fff;border-radius:16px;padding:1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+    .cta-panel .btn{background:#fff;color:#0f172a}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Ellie Brewster",
+    "url":"https://elliebrewster.com",
+    "logo":"https://elliebrewster.com/assets/favicon.png",
+    "sameAs":[]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://elliebrewster.com",
+    "name":"Ellie Brewster — SEO Expert",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://elliebrewster.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://elliebrewster.com"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMNCSVRG"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMNCSVRG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <h1>Ellie Brewster</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/services">Services</a>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
+  <!-- Header / Nav -->
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <div class="brand"><span aria-hidden="true">✨</span> Ellie Brewster</div>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact" class="btn outline">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="grid services">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">SEO • Technical • Content • Links</span>
+      <h1>Rank higher, grow faster — with clean, compounding SEO.</h1>
+      <p>From niche selection to technical SEO, E-E-A-T content systems, and sustainable link growth. I build search engines’ trust and users’ love — at the same time.</p>
+      <div class="hero-cta">
+        <a class="btn" href="/contact">Get a free audit</a>
+        <a class="btn outline" href="/work">See recent wins</a>
+      </div>
+
+      <div class="kpis" aria-label="Key results">
+        <div class="kpi"><strong>50+</strong><div class="muted">Top-100 websites built</div></div>
+        <div class="kpi"><strong>20yrs</strong><div class="muted">SEO experience</div></div>
+        <div class="kpi"><strong>CWV 90+</strong><div class="muted">Core Web Vitals</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services" aria-labelledby="svc-title">
+    <div class="container">
+      <h2 id="svc-title">Services</h2>
+      <div class="grid cards">
         <article class="card">
           <h3>Niche Analysis</h3>
-          <p class="muted">Researching profitable niches, competitor analysis, and demand mapping.</p>
+          <p class="muted">Find profitable, defensible topics with deep competition mapping.</p>
+          <ul class="list">
+            <li>Demand & difficulty model</li>
+            <li>Competitor gaps</li>
+            <li>Go-to-market keywords</li>
+          </ul>
         </article>
         <article class="card">
           <h3>Technical SEO</h3>
-          <p class="muted">Core Web Vitals, schema, clean site architecture and crawl efficiency.</p>
+          <p class="muted">Fast, crawlable, structured foundations that scale.</p>
+          <ul class="list">
+            <li>Core Web Vitals (LCP, CLS, INP)</li>
+            <li>IA & internal linking</li>
+            <li>Schema markup</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Content Strategy</h3>
-          <p class="muted">Editorial calendars, topical maps, and intent-driven articles that convert.</p>
+          <h3>Content Systems (E-E-A-T)</h3>
+          <p class="muted">Editorial playbooks, topical maps, briefs, and review cycles.</p>
+          <ul class="list">
+            <li>Topical authority maps</li>
+            <li>Intent & format alignment</li>
+            <li>Author pages & bylines</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Backlink Building</h3>
-          <p class="muted">Natural link acquisition through PR, partnerships, and data campaigns.</p>
+          <h3>Clean Link Growth</h3>
+          <p class="muted">PR-worthy assets, partnerships, and naturally earned links.</p>
+          <ul class="list">
+            <li>Digital PR hooks</li>
+            <li>Partner programs</li>
+            <li>Authority consolidation</li>
+          </ul>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="blog" style="margin-top:3rem">
-      <h2>Latest Blog Posts</h2>
-      <div class="grid posts">
+  <!-- Work / Proof -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <h2 id="work-title">Recent wins</h2>
+      <div class="grid cards">
         <article class="card">
-          <h3><a href="/blog/seo-strategy-2025">SEO Strategy 2025</a></h3>
-          <p class="muted">Explore the latest trends in E-E-A-T, search intent, and technical SEO.</p>
+          <h3>+312% Organic in 6 months</h3>
+          <p class="muted">Topical expansion + internal links + CWV fixes.</p>
         </article>
         <article class="card">
-          <h3><a href="/blog/technical-seo-guide">Technical SEO Guide</a></h3>
-          <p class="muted">Hands-on optimization of Core Web Vitals, crawl budget, and site structure.</p>
+          <h3>#1 for high-intent keyword</h3>
+          <p class="muted">Schema + page revamp aligned to intent.</p>
+        </article>
+        <article class="card">
+          <h3>Backlinks from tier-1 media</h3>
+          <p class="muted">Data asset + PR pitch sequence.</p>
         </article>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <small>© <span id="y"></span> Ellie Brewster — All rights reserved.</small>
+  <!-- Testimonials -->
+  <section class="section" aria-labelledby="testi-title">
+    <div class="container">
+      <h2 id="testi-title">What clients say</h2>
+      <div class="grid cards">
+        <figure class="card">
+          <blockquote>“Ellie rebuilt our SEO from the ground up. Fast pages, stronger content, and rankings that stuck.”</blockquote>
+          <figcaption class="muted">— Head of Growth, SaaS</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote>“From no visibility to page one across our money terms in under a quarter.”</blockquote>
+          <figcaption class="muted">— E-commerce Lead</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote>“Clean links, zero drama. Exactly what we wanted.”</blockquote>
+          <figcaption class="muted">— Agency Partner</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog previews (استخدم روابط مقالاتك الفعلية) -->
+  <section class="section" id="blog" aria-labelledby="blog-title">
+    <div class="container">
+      <h2 id="blog-title">From the blog</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3><a href="/blog/seo-strategies-2025">SEO Strategies 2025</a></h3>
+          <p class="muted">AI intent, E-E-A-T signals, and compounding content systems.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/blog/technical-seo-2025">Technical SEO Guide 2025</a></h3>
+          <p class="muted">Core Web Vitals, schema, crawl budget, and mobile-first basics.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-panel" role="region" aria-label="Contact">
+        <div>
+          <h2 style="margin:.25rem 0">Ready to grow with search?</h2>
+          <p class="muted" style="margin:0">Get a quick audit and roadmap tailored to your goals.</p>
+        </div>
+        <a class="btn" href="/contact" aria-label="Go to contact page">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+        <small>© <span id="y"></span> Ellie Brewster — All rights reserved.</small>
+        <nav aria-label="Footer">
+          <a href="/services">Services</a> ·
+          <a href="/blog">Blog</a> ·
+          <a href="/contact">Contact</a> ·
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
   </footer>
 
+  <!-- Tiny helper -->
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
