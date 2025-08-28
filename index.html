@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ellie Brewster — SEO Expert</title>
   <meta name="description" content="SEO strategies, technical SEO, backlink building, and content marketing by Ellie Brewster." />
   <link rel="canonical" href="https://elliebrewster.com/" />
@@ -14,9 +14,23 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NMNCSVRG'); 
+  })(window,document,'script','dataLayer','GTM-NMNCSVRG');
   </script>
   <!-- End Google Tag Manager -->
+
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto; margin:0; background:#f9fafb; color:#111827; line-height:1.6}
+    header,footer{background:#111827;color:#f9fafb;padding:1rem;text-align:center}
+    nav a{margin:0 .5rem;color:#f9fafb;text-decoration:none;font-weight:600}
+    nav a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:auto;padding:1.5rem}
+    h1,h2{color:#111827}
+    .grid{display:grid;gap:1rem}
+    .services,.posts{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:white;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+    .card h3{margin-top:0}
+    .muted{color:#6b7280}
+  </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -35,8 +49,41 @@
   </header>
 
   <main class="container">
-    <h2>Welcome to Ellie Brewster SEO</h2>
-    <p>Optimized content, technical SEO, backlinks, and strategies to rank higher in Google.</p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid services">
+        <article class="card">
+          <h3>Niche Analysis</h3>
+          <p class="muted">Researching profitable niches, competitor analysis, and demand mapping.</p>
+        </article>
+        <article class="card">
+          <h3>Technical SEO</h3>
+          <p class="muted">Core Web Vitals, schema, clean site architecture and crawl efficiency.</p>
+        </article>
+        <article class="card">
+          <h3>Content Strategy</h3>
+          <p class="muted">Editorial calendars, topical maps, and intent-driven articles that convert.</p>
+        </article>
+        <article class="card">
+          <h3>Backlink Building</h3>
+          <p class="muted">Natural link acquisition through PR, partnerships, and data campaigns.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="blog" style="margin-top:3rem">
+      <h2>Latest Blog Posts</h2>
+      <div class="grid posts">
+        <article class="card">
+          <h3><a href="/blog/seo-strategy-2025">SEO Strategy 2025</a></h3>
+          <p class="muted">Explore the latest trends in E-E-A-T, search intent, and technical SEO.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/blog/technical-seo-guide">Technical SEO Guide</a></h3>
+          <p class="muted">Hands-on optimization of Core Web Vitals, crawl budget, and site structure.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
